@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">GBGWeather</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">GBG Weather</string>
+    <string name="action_settings">About</string>
 </resources>
