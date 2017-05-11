@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">GBG Weather</string>
-    <string name="action_settings">About</string>
+    <string name="action_settings">Created by Jesper Kjellqvist</string>
 </resources>

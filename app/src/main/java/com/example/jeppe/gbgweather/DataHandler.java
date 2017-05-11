@@ -10,16 +10,17 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * Created by Jeppe on 2017-05-10.
+ * Created by Jesper Kjellqvist on 2017-05-10.
  */
 
-public class DataHandeler
+public class DataHandler
 {
     private URL url;
 
-    public DataHandeler(String secret_key) throws MalformedURLException
+    public DataHandler(String key) throws MalformedURLException
     {
-        url = new URL("http://data.goteborg.se/AirQualityService/v1.0/LatestMeasurement/" + secret_key + "?format=Json");
+        url = new URL("http://data.goteborg.se/AirQualityService/v1.0/LatestMeasurement/"
+                              + key + "?format=Json");
     }
 
     public String getData() throws IOException
