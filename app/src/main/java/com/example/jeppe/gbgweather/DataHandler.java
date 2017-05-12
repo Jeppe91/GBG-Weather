@@ -28,6 +28,7 @@ public class DataHandler
         String response = null;
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
+
         try
         {
             InputStream in = new BufferedInputStream(connection.getInputStream());

@@ -26,7 +26,6 @@ import java.io.InputStreamReader;
 
 public class MainActivity extends AppCompatActivity
 {
-
     public Context context;
     private static final String TAG = "MainActivity";
 
@@ -155,7 +154,6 @@ public class MainActivity extends AppCompatActivity
                                        Toast.LENGTH_LONG).show();
                     }
                 });
-
             }
 
             return null;
