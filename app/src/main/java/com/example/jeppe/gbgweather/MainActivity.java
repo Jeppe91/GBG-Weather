@@ -135,10 +135,13 @@ public class MainActivity extends AppCompatActivity
 
                 catch(final JSONException e)
                 {
-                    //If there is no rain, the json value of "RainFall" will not exist, if that
-                    //happens the value will be set to 0.
-                    valueRainFall = "0";
-                    Log.e(TAG, "Json parsing error: " + e.getMessage());
+                    /* If there is no rain, the json value of "RainFall" will not exist, if that
+                    happens the value will be set to 0. */
+
+                    if(valueRainFall == null)
+                        valueRainFall = "0";
+                    else
+                        Log.e(TAG, "Json parsing error: " + e.getMessage());
                 }
             }
 
@@ -149,9 +152,8 @@ public class MainActivity extends AppCompatActivity
                     @Override
                     public void run()
                     {
-                        Toast.makeText(getApplicationContext(),
-                                       "Couldn't get json from server!",
-                                       Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Couldn't get json from server!",
+                                                                        Toast.LENGTH_LONG).show();
                     }
                 });
             }
