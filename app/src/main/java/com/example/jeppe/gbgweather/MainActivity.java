@@ -135,8 +135,8 @@ public class MainActivity extends AppCompatActivity
 
                 catch(final JSONException e)
                 {
-                    /* If there is no rain, the json value of "RainFall" will not exist, if that
-                    happens the value will be set to 0. */
+                    /* If there is no rain the json value of "RainFall" will be set to null, if that
+                    happens the string valueRainFall will be set to "0" to indicate no rainfall */
 
                     if(valueRainFall == null)
                         valueRainFall = "0";
